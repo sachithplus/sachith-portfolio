@@ -5,7 +5,13 @@
 --Text1: hsl(0, 0%, 100%);
 --Text2: hsl(0, 0%, 85%); 
 --invalid: hsl(7, 100%, 68%);
---fs-body: 1.25rem;
+--fs-18: 1.125rem;
+--fs-24: 1.5rem;
+--fs-32: 2rem;
+--fs-48: 3rem;
+--fs-72: 4.5rem;
+--fs-88: 5.5rem;
+--container:69.375rem;
 }
 
 
@@ -24,6 +30,32 @@ body{
     font-family: 'Poppins', 'Roboto', sans-serif;
     background-color: var(--background);
     color: var(--Text1);
-    font-size: 18px;
+    font-size: var(--fs-18);
     line-height: 1.56;
+}
+.wrapper{
+    width: calc(100% - 2rem); 
+    max-width: var(--container);
+    margin-inline: auto;
+}
+
+ /* 600/16 */
+@media (min-width: 37.5em){
+   
+.wrapper{
+    width: calc(100% - 3.75rem);
+
+
+
+}
+}
+
+
+
+
+
+
+.greeting{
+    font-size: 0.7em;
+    margin-bottom: -1rem;
 }
