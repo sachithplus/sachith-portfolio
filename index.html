@@ -11,10 +11,41 @@
 </head>
 <body>
 <header class="header">
-
+<div class="wrapper">
+    <nav id="desktop-nav">
+        <div class="logo">Sachith Waidyasekara</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Sachith Waidyasekara</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </div>
+        <div class="menu-links">
+            <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+    </div>
 </header>
 <main id="main">
-<div class="wrapper">
+ <div class="wrapper">
     <p class="greeting">Hello, I’m</p>
     <h1>Sachith Waidyasekara</h1>
     <h2>Full Stack Web Developer</h2>
@@ -28,6 +59,9 @@
 
 
     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam incidunt nam numquam tenetur vero ab beatae id, vel, corporis non, sint quae reprehenderit enim voluptates a. Facere porro accusamus fugiat.</P>
+    <script src="script.js">
+
+    </script>
 </body>
 </html>
 

@@ -19,14 +19,17 @@
 html{
     box-sizing: border-box;
     font-size: 100%;
+    scroll-behavior: smooth;
 }
 *,
 *::before,
 *::after{
     box-sizing: inherit;
+    padding: 0;
+    margin: 0;
 }
 body{
-    margin: 0;
+    
     font-family: 'Poppins', 'Roboto', sans-serif;
     background-color: var(--background);
     color: var(--Text1);
@@ -39,23 +42,126 @@ body{
     margin-inline: auto;
 }
 
- /* 600/16 */
-@media (min-width: 37.5em){
-   
-.wrapper{
-    width: calc(100% - 3.75rem);
-
-
-
-}
-}
-
-
-
-
-
-
 .greeting{
     font-size: 0.7em;
     margin-bottom: -1rem;
+}
+p{
+    color: rgb(85, 85, 85);
+}
+
+/*Transition*/
+a, .btn{
+    transition: all 300ms ease;
+}
+
+/*Desktop nav */
+nav, .nav-links{
+display: flex;
+}
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+a{
+    color: var(--Text2);
+    text-decoration: none;
+    text-decoration-color: black;
+}
+a:hover{
+    color: var(--green);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: var(--green);
+}
+.logo{
+    font-size: 2rem;
+}
+.logo:hover{
+    cursor: default;
+}
+/* Hamburger menu*/
+#hamburger-nav{
+    display: none;
+    position: relative;
+}
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: var(--Text2);
+    transition: all 0.3s ease-in-out;
+}
+.menu-links{
+    position: absolute;
+   top:100%;
+   left: 0%;
+   background-color: var(--dark-gray);
+   width: 100%;
+   max-height: 0;
+   overflow: hidden;
+   transition: all 0.3s ease-in-out;
+
+}
+.menu-links a{
+   display: block;
+   padding: 10px;
+   text-align: center;
+    font-size: 1.5rem;
+    color: var(--Text2);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+ 
+}
+.menu-links ul{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+
+.menu-links.open{
+    max-height: 300px;
+    overflow: visible;
+    display: block;
+}
+
+.hamburger-icon.open span:first-child{
+    transform: rotate(45deg) translate(7px,7px);
+}
+.hamburger-icon.open span:nth-child(2){
+    opacity: 0;
+}
+.hamburger-icon.open span:last-child{
+    transform: rotate(-45deg) translate(7px,-7px);
+}
+
+
+
+@media screen and (max-width:1200px){
+    #desktop-nav{
+        display: none;
+    }
+
+    #hamburger-nav{
+        display: flex;
+    }
 }
