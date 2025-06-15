@@ -14,14 +14,14 @@
 <div class="wrapper">
     <nav id="desktop-nav">
         <div class="logo">Sachith Waidyasekara</div>
-        <div>
+        
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
+        
     </nav>
     <nav id="hamburger-nav">
         <div class="logo">Sachith Waidyasekara</div>
@@ -37,15 +37,90 @@
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
             <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="contact" onclick="toggleMenu()">Contact</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </ul>
         </div>
         
     </nav>
     </div>
 </header>
-<main id="main">
+<section id="profile">
+<div class="section__pic-container">
+    <img src="./Assets/pro-pic-1.png" alt="profile_pic">
+</div>
+<div class="section__text">
+<p class="section__text__p1">Hello, I’m</p>
+<h1 class="title">Sachith Waidyasekara</h1>
+<p class="section__text__p2">Full Stack Web Developer</p>
+<div class="btn_container">
+<button class="btn btn_color1" onclick="window.open('./Assets/Resume.pdf')">Download CV</button>
+<button class="btn btn_color2" onclick="location.href='./#contact'">Contact Info</button>
+</div>
+<div id="social-container">
+<img src="./Assets/linkedin.jpg" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/sachith-waidyasekara-74006a70/'">
+<img src="./Assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/sachithplus'">
+</div>
+</div>
+</section>
+<section id="about">
+     <div class="wrapper">
+    <p class="section__text__p1">Get to Know More</p>
+    <h1 class="title1">About Me</h1>
+    <div class="section-container">
+    <div class="section__pic-container">
+        <img src="./Assets/pro-pic2.jpg" alt="profile picture" class="about-pic">
+    </div>
+    <div class="about-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+                <img src="./Assets/experince.jpg" alt="experince icon" class="icon">
+                <h3>Experience</h3>
+                <p>2+ Years <br>Full stack Web Development <br>(Freelance, GitHub Contributions)</p>
+            </div>
+            <div class="details-container">
+                 <img src="./Assets/education.png" alt="Education icon" class="icon">
+                <h3>Education</h3>
+                <p>Freecode camp<br>#100Devs Software Engineering Program <br> – Graduate (by Leon Noel) <br>The Full-Stack Web Development Bootcamp <br>- Dr. Angela Yu (Udemy)</p>
+
+
+            </div>
+        </div>
+        <div class="text-container">
+            <p>I'm a Full-Stack Web Developer proficient in building robust applications. </p>
+        </div>
+    </div>
+    </div>
+</div>
+<img src="./Assets/67-down-double-arrow.png" alt="Arrow to Down" class="icon arrow" onclick="location.href ='./#skills'">
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<main id="main">
  <div class="wrapper">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <p class="greeting">Hello, I’m</p>
     <h1>Sachith Waidyasekara</h1>
     <h2>Full Stack Web Developer</h2>
@@ -58,7 +133,7 @@
 
 
 
-    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam incidunt nam numquam tenetur vero ab beatae id, vel, corporis non, sint quae reprehenderit enim voluptates a. Facere porro accusamus fugiat.</P>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam incidunt nam numquam tenetur vero ab beatae id, vel, corporis non, sint quae reprehenderit enim voluptates a. Facere porro accusamus fugiat.</P>-->
     <script src="script.js">
 
     </script>
