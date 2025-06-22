@@ -1,0 +1,71 @@
+@media screen and (max-width:1200px){
+    #desktop-nav{
+        display: none;
+    }
+
+    #hamburger-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+	@media (max-width: 1024px) {
+
+/*profile Section*/
+
+#profile{/* ok */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    
+}
+ .section__pic-container{/* ok */
+   
+    height: 280px;
+    width: 280px;
+    margin: 2rem auto;
+    
+ }
+
+ .section__text__p2{/*ok*/
+    font-size: 1.25rem;
+ }
+ .title{/*ok*/
+    font-size: 2.2rem;
+ }
+.title1{/* ok */
+   font-size: 2.2rem;
+     
+}
+.logo{/* ok */
+    font-size: 1.75rem;
+}  
+ /*icon*/
+  .icon{/* ok */
+    height: 35px;
+    width: 35px;
+  }
+ /*Buttons*/
+  .btn_container{/* ok */
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+ .btn{
+    width: 100%;
+   max-width: 250px;
+  }
+     }
+
+
+
+
+
+
+
+
+
+
+
+
